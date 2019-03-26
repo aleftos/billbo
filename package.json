@@ -1,0 +1,24 @@
+{
+  "name": "billbo",
+  "version": "0.0.1",
+  "description": "Utilities for the national tax billing system of Bolivia",
+  "main": "index.js",
+  "scripts": {
+    "test": "my test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleftos/billbo"
+  },
+  "keywords": [
+    "taxes",
+    "billinig",
+    "BO"
+  ],
+  "author": "Luis Sanabria",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "jsome": "^2.5.0"
+  }
+}
