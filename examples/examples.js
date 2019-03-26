@@ -46,7 +46,7 @@ console.log(
     {
       NIT_EMISOR: '123456789',
       NÚMERO_FACTURA: '29',
-      FECHA_HORA: 20190113163721249,  // * Numfer type is accepted
+      FECHA_HORA: 20190113163721249,  // * Number type is accepted
       SUCURSAL: '0',
       MODALIDAD: '1',
       TIPO_EMISIÓN: '2',
