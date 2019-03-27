@@ -172,14 +172,18 @@ Con los siguientes datos:
 
                     159FFE6FB1986A24BB32DBE5A2A34214B245A6A3
 
-![TBO](https://raw.githubusercontent.com/aleftos/billbo/master/TBO-icon-logo-128.png)
-
-<ul>
- <li>Coder & programmer: Luis Sanabria</li>
- <li>Copyright: &copy <a href="http://arquetic.org">Arquetic.org</a> 2019 </li>
- <li>Date: March, 2019</li>
- <li>Version: 0.0.1</li>
- <li>GitHub: https://github.com/aleftos/billbo</li>
- <li>NPM: https://www.npmjs.com/package/billbo</li>
-</ul>
-
+<table class="tg">
+  <tr>
+    <td class="tg-0lax">![TBO](https://raw.githubusercontent.com/aleftos/billbo/master/TBO-icon-logo-128.png)</td>
+    <td class="tg-0lax">
+     <ul>
+      <li>Coder & programmer: Luis Sanabria</li>
+      <li>Copyright: &copy <a href="http://arquetic.org">Arquetic.org</a> 2019 </li>
+      <li>Date: March, 2019</li>
+      <li>Version: 0.0.1</li>
+      <li>GitHub: https://github.com/aleftos/billbo</li>
+      <li>NPM: https://www.npmjs.com/package/billbo</li>
+    </ul>
+   </td>
+  <tr>
+</table>
