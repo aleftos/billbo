@@ -6,7 +6,7 @@
             npm install billbo
             git clone https://github.com/aleftos/billbo
  
-Description:
+<h2>Description:</h2>
 
 GENERACION CUF
 
@@ -172,6 +172,69 @@ Con los siguientes datos:
 
                     159FFE6FB1986A24BB32DBE5A2A34214B245A6A3
 
+<h2>Usage:</h2>
+
+```
+let cuf = require('../lib/cuf');
+
+console.log(
+  cuf.cuf(
+    123456789,
+    1,
+    20190113163721231
+  )
+)
+
+console.log(
+  cuf.getCUF({
+    NIT_EMISOR: '123456789',
+    NÚMERO_FACTURA: '1',
+    FECHA_HORA: '20190113163721231'
+  })
+)
+
+console.log(
+  cuf.getCUF({
+    NIT_EMISOR: '123456789',
+    NÚMERO_FACTURA: '1',
+    FECHA_HORA: cuf.getCUFTime()  // * local time
+  })
+)
+
+console.log(
+  cuf.getCUF(
+    {
+      NIT_EMISOR: '123456789',
+      NÚMERO_FACTURA: '29',
+      FECHA_HORA: 20190113163721249,  // * Number type is accepted
+      SUCURSAL: '0',
+      MODALIDAD: '1',
+      TIPO_EMISIÓN: '2',
+      CÓDIGO_DOCUMENTO_FISCAL: '2',
+      TIPO_DOCUMENTO_SECTOR: '6',
+      POS: '0'
+    }
+  )
+)
+
+console.log(
+  cuf.getCUF(
+    {
+      NIT_EMISOR: '123456789',
+      NÚMERO_FACTURA: '29',
+      FECHA_HORA: 20190113163721249,
+      SUCURSAL: '0',
+      MODALIDAD: '1',
+      TIPO_EMISIÓN: '2A',           // * return ERROR
+      CÓDIGO_DOCUMENTO_FISCAL: '2',
+      TIPO_DOCUMENTO_SECTOR: '6',
+      POS: '0'
+    }
+  )
+)
+
+console.log(cuf.getCUFTime());
+```
 ![TBO](https://raw.githubusercontent.com/aleftos/billbo/master/TBO-icon-logo-128.png)
 <ul>
  <li>Coder & programmer: Luis Sanabria</li>
