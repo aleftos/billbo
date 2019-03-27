@@ -171,6 +171,7 @@ Con los siguientes datos:
 
                     159FFE6FB1986A24BB32DBE5A2A34214B245A6A3
 
+![TBO](https://raw.github.bom/aleftos/billbo/TBO-icon-logo-256.png)
 <img src="./TBO-icon-logo-256.png" alt="TBO" width: "80px;"/>
 <p>
  • Coder & programmer: Luis Sanabria
