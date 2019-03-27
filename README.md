@@ -258,5 +258,5 @@ console.log(billbo.getCUFTime());
  <li>Date: March, 2019</li>
  <li>Version: 0.0.1</li>
  <li>GitHub: https://github.com/aleftos/billbo</li>
- <li>NPM: https://www.npmjs.com/package/billbo</li>
+ <li>NPM: https://www.npmjs.com/package/billbo-cuf</li>
 </ul>
