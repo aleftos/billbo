@@ -6,6 +6,7 @@
             npm install billbo-cuf
             or
             npm install @arquetic/billbo
+            or
             git clone https://github.com/aleftos/billbo
  
 <h2>Description:</h2>
