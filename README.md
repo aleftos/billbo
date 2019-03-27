@@ -171,8 +171,7 @@ Con los siguientes datos:
 
                     159FFE6FB1986A24BB32DBE5A2A34214B245A6A3
 
-![TBO](https://raw.githubusercontent.bom/aleftos/billbo/TBO-icon-logo-256.png)
-<img src="./TBO-icon-logo-256.png" alt="TBO" width: "80px;"/>
+![TBO](https://raw.githubusercontent.com/aleftos/billbo/TBO-icon-logo-256.png)
 <p>
  • Coder & programmer: Luis Sanabria
  • Copyright: (c) <a href="http://arquetic.org">Arquetic.org</a> 2019 
