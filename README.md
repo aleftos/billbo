@@ -136,8 +136,9 @@ Nota: Todos los campos deben completarse conforme a la longitud indicada.
 Incorporar a la cadena (52 dígitos) resultante, un digito auto verificador utilizando Modulo
 11. La cadena resultante debe ser codificada utilizando para ello Base 16 dando como resultado el CUF buscado (código Único de Factura).
 
-Ejemplo:
-Con los siguientes datos:
+Ejemplo:<br>
+Con los siguientes datos:<br>
+
                             • NIT EMISOR = 123456789
                             • FECHA / HORA = 20190113163721231
                             • SUCURSAL = 0
