@@ -2,12 +2,6 @@
  
             npm install billbo
  
-Coder & programmer: Luis Sanabria
-Copyright: (c) Arquetic.org 2019 
-Date: March, 2019
-Version: 0.0.1
-GitHub: https://github.com/aleftos/billbo
-Summary: Utilities for the national tax billing system of Bolivian country.
 Description:
 
 GENERACION CUF
@@ -173,3 +167,10 @@ Con los siguientes datos:
 4. Se aplica a la cadena resultante Base 16
 
                     159FFE6FB1986A24BB32DBE5A2A34214B245A6A3
+
+• Coder & programmer: Luis Sanabria
+• Copyright: (c) Arquetic.org 2019 
+• Date: March, 2019
+• Version: 0.0.1
+• GitHub: https://github.com/aleftos/billbo
+• Summary: Utilities for the national tax billing system of Bolivian country.
