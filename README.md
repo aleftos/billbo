@@ -174,7 +174,7 @@ Con los siguientes datos:
 
 <h2>Usage:</h2>
 
-```
+```javascript
 let billbo = require('billbo');
 
 console.log(
