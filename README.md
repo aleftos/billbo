@@ -175,10 +175,10 @@ Con los siguientes datos:
 <h2>Usage:</h2>
 
 ```
-let cuf = require('../lib/cuf');
+let billbo = require('billbo');
 
 console.log(
-  cuf.cuf(
+  billbo.cuf(
     123456789,
     1,
     20190113163721231
@@ -186,7 +186,7 @@ console.log(
 )
 
 console.log(
-  cuf.getCUF({
+  billbo.getCUF({
     NIT_EMISOR: '123456789',
     NÚMERO_FACTURA: '1',
     FECHA_HORA: '20190113163721231'
@@ -194,7 +194,7 @@ console.log(
 )
 
 console.log(
-  cuf.getCUF({
+  billbo.getCUF({
     NIT_EMISOR: '123456789',
     NÚMERO_FACTURA: '1',
     FECHA_HORA: cuf.getCUFTime()  // * local time
@@ -202,7 +202,7 @@ console.log(
 )
 
 console.log(
-  cuf.getCUF(
+  billbo.getCUF(
     {
       NIT_EMISOR: '123456789',
       NÚMERO_FACTURA: '29',
@@ -218,7 +218,7 @@ console.log(
 )
 
 console.log(
-  cuf.getCUF(
+  billbo.getCUF(
     {
       NIT_EMISOR: '123456789',
       NÚMERO_FACTURA: '29',
@@ -233,7 +233,7 @@ console.log(
   )
 )
 
-console.log(cuf.getCUFTime());
+console.log(billbo.getCUFTime());
 ```
 ![TBO](https://raw.githubusercontent.com/aleftos/billbo/master/TBO-icon-logo-128.png)
 <ul>
