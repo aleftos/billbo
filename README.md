@@ -4,6 +4,7 @@
  Install:
  
             npm install billbo
+            git clone https://github.com/aleftos/billbo
  
 Description:
 
@@ -173,10 +174,12 @@ Con los siguientes datos:
 
 ![TBO](https://raw.githubusercontent.com/aleftos/billbo/master/TBO-icon-logo-128.png)
 
-<p>
- • Coder & programmer: Luis Sanabria
- • Copyright: (c) <a href="http://arquetic.org">Arquetic.org</a> 2019 
- • Date: March, 2019
- • Version: 0.0.1
- • GitHub: https://github.com/aleftos/billbo
-</p>
+<ul>
+ <li>Coder & programmer: Luis Sanabria</li>
+ <li>Copyright: (c) <a href="http://arquetic.org">Arquetic.org</a> 2019 </li>
+ <li>Date: March, 2019</li>
+ <li>Version: 0.0.1</li>
+ <li>GitHub: https://github.com/aleftos/billbo</li>
+ <li>NPM: https://www.npmjs.com/package/billbo</li>
+</ul>
+
