@@ -3,7 +3,7 @@
  
  Install:
  
-            npm install billbo
+            npm install billbo-cuf
             git clone https://github.com/aleftos/billbo
  
 <h2>Description:</h2>
