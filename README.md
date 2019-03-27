@@ -1,3 +1,6 @@
+ Summary:
+            Utilities for the national tax billing system of Bolivian country.
+ 
  Install:
  
             npm install billbo
@@ -168,9 +171,9 @@ Con los siguientes datos:
 
                     159FFE6FB1986A24BB32DBE5A2A34214B245A6A3
 
-• Coder & programmer: Luis Sanabria
-• Copyright: (c) Arquetic.org 2019 
-• Date: March, 2019
-• Version: 0.0.1
-• GitHub: https://github.com/aleftos/billbo
-• Summary: Utilities for the national tax billing system of Bolivian country.
+ • Coder & programmer: Luis Sanabria
+ • Copyright: (c) <a href="http://arquetic.org">Arquetic.org</a> 2019 
+ • Date: March, 2019
+ • Version: 0.0.1
+ • GitHub: https://github.com/aleftos/billbo
+
