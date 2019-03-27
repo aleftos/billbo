@@ -138,7 +138,7 @@ Incorporar a la cadena (52 dígitos) resultante, un digito auto verificador util
 
 Ejemplo:<br>
 
-0. COn los siguientes datos:
+0. Con los siguientes datos:
 
 
                             • NIT EMISOR = 123456789
