@@ -1,6 +1,6 @@
 {
   "name": "billbo",
-  "version": "0.0.4",
+  "version": "0.0.41",
   "description": "Utilities for the national tax billing system of Bolivia",
   "main": "index.js",
   "scripts": {
