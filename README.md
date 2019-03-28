@@ -181,31 +181,20 @@ Ejemplo:<br>
 <h2>Usage:</h2>
 
 ```javascript
-let billbo = require('billbo');
+let cuf = require('../lib/cuf');
 
 console.log(
-  billbo.cuf(
+  'Test 1 NIT_EMISOR = 123456789, NÚMERO_FACTURA = 1, FECHA_HORA = 20190113163721231 :\n',
+  cuf.cuf(
     123456789,
     1,
     20190113163721231
   )
 )
 
-// Output
-
-{ NIT_EMISOR: '123456789',
-  'NÚMERO_FACTURA': '1',
-  FECHA_HORA: '20190113163721230',
-  SUCURSAL: '0',
-  MODALIDAD: '1',
-  'TIPO_EMISIÓN': '1',
-  'CÓDIGO_DOCUMENTO_FISCAL': '1',
-  TIPO_DOCUMENTO_SECTOR: '1',
-  POS: '0',
-  CUF: '159FFE6FB1986A24BB32D9C788C2785A0005A6A7' }
-
 console.log(
-  billbo.getCUF({
+  'Test 2 most common call:\n',
+  cuf.getCUF({
     NIT_EMISOR: '123456789',
     NÚMERO_FACTURA: '1',
     FECHA_HORA: '20190113163721231'
@@ -213,7 +202,8 @@ console.log(
 )
 
 console.log(
-  billbo.getCUF({
+  'Test 3 FECHA_HORA takes data from module:\n',
+  cuf.getCUF({
     NIT_EMISOR: '123456789',
     NÚMERO_FACTURA: '1',
     FECHA_HORA: cuf.getCUFTime()  // * local time
@@ -221,11 +211,12 @@ console.log(
 )
 
 console.log(
-  billbo.getCUF(
+  'Test 4 FECHA_HORA is no present:\n',
+  cuf.getCUF(
     {
       NIT_EMISOR: '123456789',
       NÚMERO_FACTURA: '29',
-      FECHA_HORA: 20190113163721249,  // * Number type is accepted
+      // FECHA_HORA: cuf.getCUFTime(),  // * FECHA_HORA is no present
       SUCURSAL: '0',
       MODALIDAD: '1',
       TIPO_EMISIÓN: '2',
@@ -237,7 +228,25 @@ console.log(
 )
 
 console.log(
-  billbo.getCUF(
+  'Test 5 NIT_EMISOR is number type, FECHA_HORA is no present:\n',
+  cuf.getCUF(
+    {
+      NIT_EMISOR: 123456789,            // * number type
+      NÚMERO_FACTURA: '29',
+      // FECHA_HORA: cuf.getCUFTime(),  // * FECHA_HORA is no present
+      SUCURSAL: '0',
+      MODALIDAD: '1',
+      TIPO_EMISIÓN: '2',
+      CÓDIGO_DOCUMENTO_FISCAL: '2',
+      TIPO_DOCUMENTO_SECTOR: '6',
+      POS: '0'
+    }
+  )
+)
+
+console.log(
+  'Test 6 FECHA_HORA is number type, TIPO_EMISIÓN contains non numeric type:',
+  cuf.getCUF(
     {
       NIT_EMISOR: '123456789',
       NÚMERO_FACTURA: '29',
@@ -252,7 +261,77 @@ console.log(
   )
 )
 
-console.log(billbo.getCUFTime());
+console.log('Local time: ', cuf.getCUFTime());
+
+// Output:
+
+// Test 1 NIT_EMISOR = 123456789, NÚMERO_FACTURA = 1, FECHA_HORA = 20190113163721231 :
+ { NIT_EMISOR: '123456789',
+  'NÚMERO_FACTURA': '1',
+  FECHA_HORA: '20190113163721230',
+  SUCURSAL: '0',
+  MODALIDAD: '1',
+  'TIPO_EMISIÓN': '1',
+  'CÓDIGO_DOCUMENTO_FISCAL': '1',
+  TIPO_DOCUMENTO_SECTOR: '1',
+  POS: '0',
+  CUF: '159FFE6FB1986A24BB32D9C788C2785A0005A6A7' }
+
+// Test 2 most common call:
+ { NIT_EMISOR: '123456789',
+  'NÚMERO_FACTURA': '1',
+  FECHA_HORA: '20190113163721231',
+  SUCURSAL: '0',
+  MODALIDAD: '1',
+  'TIPO_EMISIÓN': '1',
+  'CÓDIGO_DOCUMENTO_FISCAL': '1',
+  TIPO_DOCUMENTO_SECTOR: '1',
+  POS: '0',
+  CUF: '159FFE6FB1986A24BB32DBE5A2A34214B245A6A3' }
+
+// Test 3 FECHA_HORA takes data from module:
+ { NIT_EMISOR: '123456789',
+  'NÚMERO_FACTURA': '1',
+  FECHA_HORA: '20190328113205475',
+  SUCURSAL: '0',
+  MODALIDAD: '1',
+  'TIPO_EMISIÓN': '1',
+  'CÓDIGO_DOCUMENTO_FISCAL': '1',
+  TIPO_DOCUMENTO_SECTOR: '1',
+  POS: '0',
+  CUF: '159FFE6FB198D41F2B9F4EDD635C98B1CF45A6A9' }
+
+// Test 4 FECHA_HORA is no present:
+ { NIT_EMISOR: '123456789',
+  'NÚMERO_FACTURA': '29',
+  FECHA_HORA: '20190328113205478',
+  SUCURSAL: '0',
+  MODALIDAD: '1',
+  'TIPO_EMISIÓN': '2',
+  'CÓDIGO_DOCUMENTO_FISCAL': '2',
+  TIPO_DOCUMENTO_SECTOR: '6',
+  POS: '0',
+  CUF: '159FFE6FB198D41F2B9F5537B12637CC82F50027' }
+
+// Test 5 NIT_EMISOR is number type, FECHA_HORA is no present:
+ { NIT_EMISOR: '123456789',
+  'NÚMERO_FACTURA': '29',
+  FECHA_HORA: '20190328113205479',
+  SUCURSAL: '0',
+  MODALIDAD: '1',
+  'TIPO_EMISIÓN': '2',
+  'CÓDIGO_DOCUMENTO_FISCAL': '2',
+  TIPO_DOCUMENTO_SECTOR: '6',
+  POS: '0',
+  CUF: '159FFE6FB198D41F2B9F5755CB07018735350023' }
+
+// Test 6 FECHA_HORA is number type, TIPO_EMISIÓN contains non numeric type
+ ERROR
+
+// Get local time in required format
+
+Local time:  20190328113205481
+
 ```
 ![TBO](https://raw.githubusercontent.com/aleftos/billbo/master/TBO-icon-logo-128.png)
 <ul>
