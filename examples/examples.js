@@ -18,6 +18,7 @@
 let cuf = require('../lib/cuf');
 
 console.log(
+  'Test 1 NIT_EMISOR = 123456789, NÚMERO_FACTURA = 1, FECHA_HORA = 20190113163721231 :\n',
   cuf.cuf(
     123456789,
     1,
@@ -26,6 +27,7 @@ console.log(
 )
 
 console.log(
+  'Test 2 most common call:\n',
   cuf.getCUF({
     NIT_EMISOR: '123456789',
     NÚMERO_FACTURA: '1',
@@ -34,6 +36,7 @@ console.log(
 )
 
 console.log(
+  'Test 3 FECHA_HORA takes data from module:\n',
   cuf.getCUF({
     NIT_EMISOR: '123456789',
     NÚMERO_FACTURA: '1',
@@ -42,11 +45,12 @@ console.log(
 )
 
 console.log(
+  'Test 4 FECHA_HORA is no present:\n',
   cuf.getCUF(
     {
       NIT_EMISOR: '123456789',
       NÚMERO_FACTURA: '29',
-      FECHA_HORA: 20190113163721249,  // * Number type is accepted
+      // FECHA_HORA: cuf.getCUFTime(),  // * FECHA_HORA is no present
       SUCURSAL: '0',
       MODALIDAD: '1',
       TIPO_EMISIÓN: '2',
@@ -58,6 +62,24 @@ console.log(
 )
 
 console.log(
+  'Test 5 NIT_EMISOR is number type, FECHA_HORA is no present:\n',
+  cuf.getCUF(
+    {
+      NIT_EMISOR: 123456789,            // * number type
+      NÚMERO_FACTURA: '29',
+      // FECHA_HORA: cuf.getCUFTime(),  // * FECHA_HORA is no present
+      SUCURSAL: '0',
+      MODALIDAD: '1',
+      TIPO_EMISIÓN: '2',
+      CÓDIGO_DOCUMENTO_FISCAL: '2',
+      TIPO_DOCUMENTO_SECTOR: '6',
+      POS: '0'
+    }
+  )
+)
+
+console.log(
+  'Test 6 FECHA_HORA is number type, TIPO_EMISIÓN contains non numeric type:',
   cuf.getCUF(
     {
       NIT_EMISOR: '123456789',
@@ -73,4 +95,4 @@ console.log(
   )
 )
 
-console.log(cuf.getCUFTime());
+console.log('Local time: ', cuf.getCUFTime());
