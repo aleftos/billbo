@@ -3,7 +3,7 @@
  
  Install:
  
-            npm install billbo-cuf
+            npm install billbo
             or
             npm install @arquetic/billbo
             or
