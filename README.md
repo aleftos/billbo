@@ -338,7 +338,7 @@ Local time:  20190328113205481
  <li>Coder & programmer: Luis Sanabria</li>
  <li>Copyright: &copy <a href="http://arquetic.org">Arquetic.org</a> 2019 </li>
  <li>Date: March, 2019</li>
- <li>Version: 0.0.1</li>
+ <li>Version: 0.0.13</li>
  <li>GitHub: https://github.com/aleftos/billbo</li>
  <li>NPM: https://www.npmjs.com/package/billbo-cuf</li>
 </ul>
