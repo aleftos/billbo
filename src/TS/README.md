@@ -20,7 +20,8 @@ To transpiler:
             tsc src/TS/examples.ts
 
 To run:
-            ts-node/TS/examples.ts
+
+            ts-node src/TS/examples.ts
 
 ```javascript
 import { CUFind, CUFTime } from '../TS/cufind';
