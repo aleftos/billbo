@@ -1,7 +1,7 @@
  Summary:
             <h1>Utilities for the national tax billing system of Bolivian country.</h1>
  
- Install:
+ <h2>Install:</h2>
  
             npm install billbo
             or
