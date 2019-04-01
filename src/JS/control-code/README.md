@@ -172,33 +172,104 @@ jsome(billing.getDataToBilling(
 ```javascript
 Test 0:
 {
-  ControlCode: "6A-DC-53-05-14",
-  QRCodeBase64: "data:image/gif;base64,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",
-  QRCodeText: "4189179011|1503|29040011007|02072007|2500|2500|6A-DC-53-05-14|4189179011|0.00|0.00|0.00|0.00",
-  LiteralBillAmount: {
-    literal: "Dos mil quinientos  con 0/100 Bolivianos",
-    split: {
-      integer: "Dos mil quinientos ",
-      cents: "",
-      centsHTML: "con <sup>0</sup>/<sub>100</sub>",
-      currency: "Boliviano",
-      format: "BOB 2,500.00"
-    }
-  }
+. ControlCode: "6A-DC-53-05-14",
+. QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/ ...",
+. QRCodeText: "4189179011|1503|29040011007|02072007|2500|2500|6A-DC-53-05-14|4189179011|0.00|0.00|0.00|0.00",
+. LiteralBillAmount: {
+. . literal: "Dos mil quinientos  con 0/100 Bolivianos",
+. . split: {
+. . . integer: "Dos mil quinientos ",
+. . . cents: "",
+. . . centsHTML: "con <sup>0</sup>/<sub>100</sub>",
+. . . currency: "Boliviano",
+. . . format: "BOB2,500.00"
+. . }
+. }
+}
+
+Test 1:
+{
+. ControlCode: "FB-A6-E4-78",
+. QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/ ...",
+. QRCodeText: "1026469026|152|79040011859|28072007|135|135|FB-A6-E4-78|1026469026|0.00|0.00|0.00|0.00",
+. LiteralBillAmount: {
+. . literal: "Ciento treinta y cinco con 0/100 Bolivianos",
+. . split: {
+. . . integer: "Ciento treinta y cinco",
+. . . cents: "",
+. . . centsHTML: "con <sup>0</sup>/<sub>100</sub>",
+. . . currency: "Boliviano",
+. . . format: "BOB135.00"
+. . }
+. }
+}
+
+Test 2:
+{
+. ControlCode: "71-D5-61-C8",
+. QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/ ...",
+. QRCodeText: "1004141023|665|20040010113|08012007|905,23|905,23|71-D5-61-C8|1004141023|0.00|0.00|0.00|0.00",
+. LiteralBillAmount: {
+. . literal: "Novecientos cinco con 23/100 Bolivianos",
+. . split: {
+. . . integer: "Novecientos cinco",
+. . . cents: "veintitres",
+. . . centsHTML: "con <sup>23</sup>/<sub>100</sub>",
+. . . currency: "Boliviano",
+. . . format: "BOB905.23"
+. . }
+. }
+}
+
+Test 3:
+{
+. ControlCode: "62-12-AF-1B",
+. QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/ ...",
+. QRCodeText: "0|978256|1904008691195|01022008|26006|26006|62-12-AF-1B|0|0.00|0.00|0.00|0.00",
+. LiteralBillAmount: {
+. . literal: "Veintiseis mil seis con 0/100 Bolivianos",
+. . split: {
+. . . integer: "Veintiseis mil seis",
+. . . cents: "",
+. . . centsHTML: "con <sup>0</sup>/<sub>100</sub>",
+. . . currency: "Boliviano",
+. . . format: "BOB26,006.00"
+. . }
+. }
+}
+
+Test 4:
+{
+. ControlCode: "6A-50-31-01-32",
+. QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/ ...",
+. QRCodeText: "1035012010|9901|10040010640|13082007|451,49|451,49|6A-50-31-01-32|1035012010|0.00|0.00|0.00|0.00",
+. LiteralBillAmount: {
+. . literal: "Cuatrocientos cincuenta y uno con 49/100 Bolivianos",
+. . split: {
+. . . integer: "Cuatrocientos cincuenta y uno",
+. . . cents: "cuarenta y nueve",
+. . . centsHTML: "con <sup>49</sup>/<sub>100</sub>",
+. . . currency: "Boliviano",
+. . . format: "BOB451.49"
+. . }
+. }
+}
+
+Test 5:
+{
+. ControlCode: "A8-6B-FD-82-16",
+. QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/ ...",
+. QRCodeText: "953387014|10015|30040010595|25082007|5725,90|5725,90|A8-6B-FD-82-16|953387014|0.00|0.00|0.00|0.00",
+. LiteralBillAmount: {
+. . literal: "Cinco mil setecientos veinticinco con 90/100 Bolivianos",
+. . split: {
+. . . integer: "Cinco mil setecientos veinticinco",
+. . . cents: "noventa",
+. . . centsHTML: "con <sup>90</sup>/<sub>100</sub>",
+. . . currency: "Boliviano",
+. . . format: "BOB5,725.90"
+. . }
+. }
 }
 
 ```
