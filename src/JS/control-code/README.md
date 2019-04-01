@@ -170,7 +170,7 @@ jsome(billing.getDataToBilling(
 ```
 <h3>Output</h3>
 ```javascript
-Test 0:
+// Test 0:
 {
 . ControlCode: "6A-DC-53-05-14",
 . QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/4yPqcvtD6OcdIKLs94cZY+Blwgw33EaabSa3AuHQUx3qKzis97eo18CUnqKmlF2PJKWwmaRB/1Ji
@@ -201,7 +201,7 @@ NoTmrzkIi3/STyWhnOD2LSf4SBpO0uBMXJ02081/ehETw5Vlso8KueEakCAorCn55xp/vTI0QcGVJ1eH
 . }
 }
 
-Test 1:
+// Test 1:
 {
 . ControlCode: "FB-A6-E4-78",
 . QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/4yPqcvtD6OcdIKLs94cZcYBXoiNl0l+h6qwQQp3b0yfa7mEqH7bRu2bBVE7IM8YI+ZkP5iyWXsmX
@@ -233,7 +233,7 @@ Ds=",
 . }
 }
 
-Test 2:
+// Test 2:
 {
 . ControlCode: "71-D5-61-C8",
 . QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/4yPqcvtD6OcdIKLs94cZY+BlwhQ38GlJRo+6qsa8KyRNjviq3TKdO4DNn6/IPF1MyYDvUjzuGQcZ
@@ -265,7 +265,7 @@ kpuPbYEpcoEKbbhXBF0GM0kItVmR5y6ppnuS6cjdQkvaqZyp0A9Kk1VSsJlIvOoSsqkODXKVAo6dapQ/
 . }
 }
 
-Test 3:
+// Test 3:
 {
 . ControlCode: "62-12-AF-1B",
 . QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/4yPqcvtD6OcdIKLs96c5XpwgIchn1U+4sqOQQtr5AUa4uzaqXQ68e8CxnC1V2fRM9JQS5+wpXuui
@@ -296,7 +296,7 @@ OQz39Y+UGKlm9bb2sgUFchjkLOT/btmDQE2v6ats2vN0yU9w0k5eV4KjllcZKHAyUhXkvJd/ZTksrw5S
 . }
 }
 
-Test 4:
+// Test 4:
 {
 . ControlCode: "6A-50-31-01-32",
 . QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/4yPqcvtD6OcdIKLs94cZY+BXHh8i6mMDNqM7gsY8KyJcUnKsL3miXry9Wg0HXHGw11sQOMtJVTWg
@@ -327,7 +327,7 @@ W2Qky7V3gr1GMrvJVRe1cui6LaY0m06lH1zpCciWybUkoavqN4qW1CnydK0LbWcRYxmFXECQ/ylU3/fL
 . }
 }
 
-Test 5:
+// Test 5:
 {
 . ControlCode: "A8-6B-FD-82-16",
 . QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/4yPqcvtD6OcdIKLs94c8Q94GJNB5fOR4wG2oOHGmiiH7Kqcjt6kC1+rwYIxmsyouphwvc6PSSwGo
