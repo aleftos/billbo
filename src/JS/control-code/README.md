@@ -51,10 +51,7 @@ Finalmente, el sistema de facturación computarizada estará en condiciones de e
  
 <h2>Requirements:</h2>
 
-            npm install -g typescript
-            and
-            npm install -g ts-node
-
+            npm install jsome
 
 ```javascript
 const jsome = require('jsome');
