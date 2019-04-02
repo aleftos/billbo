@@ -2,7 +2,7 @@
             <h1>Utilities for the national tax billing system of Bolivian country.</h1>
  
  <h2>Description (Legacy: still in use):</h2>
-NUEVA ESPECIFICACIÓN TÉCNICA DEL CÓDIGO DE CONTROL Ver.7.0 (10.09.2007)<br>
+NUEVA ESPECIFICACIÓN TÉCNICA DEL CÓDIGO DE CONTROL Ver.7.0 (10.09.2007)<br><br>
 <ol>
 <li>
 ANTECEDENTES
