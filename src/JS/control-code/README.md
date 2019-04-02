@@ -7,30 +7,30 @@ Ver.7.0 (10.09.2007)
 <ol>
 <li>
 ANTECEDENTES
-En el marco del Nuevo Sistema de Facturación implementado por la Administración Tributaria, se tiene prevista la incorporación de nuevos elementos de seguridad en las facturas  emitidas por sistemas de facturación computarizada. En este sentido, toda factura emitida por este medio, deberá incorporar un Código de Control generado a partir de información de la misma.<br>
+En el marco del Nuevo Sistema de Facturación implementado por la Administración Tributaria, se tiene prevista la incorporación de nuevos elementos de seguridad en las facturas  emitidas por sistemas de facturación computarizadaEn este sentido, toda factura emitida por este medio, deberá incorporar un Código de Control generado a partir de información de la misma.<br>
 A efectos del Nuevo Sistema de Facturación, solo podrán emitir facturas aquellos sistemas de facturación computarizada que tengan implementado el generador del Código de Control, estén registrados en Impuestos Nacionales, y además pasen por un proceso de certificación que verifique la correcta generación del Código de Control.
 </li>
 <li>
 ¿QUE ES EL CÓDIGO DE CONTROL?
-Es un dato alfanumérico generado e impreso por un sistema de facturación computarizada a tiempo de emitir una factura. Constituye una representación única de una factura, que será empleada por el SIN para que junto a otra información permitan determinar la validez o no de la misma.<br>
-Este código se genera en base a información de dosificación de la factura, información de la transacción comercial, y un dato alfanumérico denominado Llave de Dosificación, que el contribuyente recibirá por Internet cada vez que solicite dosificaciones de facturas para su sistema de facturación computarizada.
-</li>
-<li>
-EMISIÓN DE FACTURAS A TRAVÉS DE SISTEMAS DE FACTURACIÓN COMPUTARIZADA
-Todo contribuyente que requiera emitir facturas haciendo uso de un sistema de facturación computarizada, deberá previamente:
-<ul>
-<li>
-Registrar su sistema de facturación computarizada en el SIN, llevando a cabo el trámite de Registro de Autoimpresores en oficinas de Impuestos Nacionales, o a través del Portal Tributario, siempre que el contribuyente sea Newton.
+Es un dato alfanumérico generado e impreso por un sistema de facturación computarizada a tiempo de emitir una facturaConstituye una representación única de una factura, que será empleada por el SIN para que junto a otra información permitan determinar la validez o no de la misma.<br>
+    Este código se genera en base a información de dosificación de la factura, información de la transacción comercial, y un dato alfanumérico denominado Llave de Dosificación, que el contribuyente recibirá por Internet cada vez que solicite dosificaciones de facturas para su sistema de facturación computarizada.
+    </li>
+    <li>
+    EMISIÓN DE FACTURAS A TRAVÉS DE SISTEMAS DE FACTURACIÓN COMPUTARIZADA
+    Todo contribuyente que requiera emitir facturas haciendo uso de un sistema de facturación computarizada, deberá previamente:
+    <ul>
+    <li>
+    Registrar su sistema de facturación computarizada en el SIN, llevando a cabo el trámite de Registro de Autoimpresores en oficinas de Impuestos Nacionales, o a través del Portal Tributario, siempre que el contribuyente sea Newton.
 </li>
 <li>
 Certificar la correcta generación del Código de Control, ingresando al Portal Tributario y sometiéndose a una prueba de certificación, la cual verificará que su sistema de facturación genera correctamente el Código de Control.<br>
 Una vez que su sistema de facturación esté registrado y certificado por el SIN, el contribuyente podrá:
 </li>
 <li>
-Solicitar dosificación de facturas para su sistema de facturación computarizada. Este trámite deberá realizarse a través del Portal Tributario, producto del mismo el contribuyente recibirá un Certificado de Activación de Dosificación, que incluirá información de la dosificación realizada.
+Solicitar dosificación de facturas para su sistema de facturación computarizadaEste trámite deberá realizarse a través del Portal Tributario, producto del mismo el contribuyente recibirá un Certificado de Activación de Dosificación, que incluirá información de la dosificación realizada.
 </li>
 <li>
-Recabar la Llave de Dosificación que el SIN asignó a su dosificación, esto a partir del Portal Tributario. Dada la sensibilidad de este dato, su conocimiento y divulgación serán de entera y absoluta responsabilidad del contribuyente.
+Recabar la Llave de Dosificación que el SIN asignó a su dosificación, esto a partir del Portal TributarioDada la sensibilidad de este dato, su conocimiento y divulgación serán de entera y absoluta responsabilidad del contribuyente.
 </li>
 <li>
 Configurar su sistema de facturación computarizada, ingresando información de dosificación contenida en el Certificado de Activación de Dosificación de Facturas, además de la Llave de Dosificación recibida.
@@ -172,106 +172,105 @@ jsome(billing.getDataToBilling(
 ```javascript
 Test 0:
 {
-. ControlCode: "6A-DC-53-05-14",
-. QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/ ...",
-. QRCodeText: "4189179011|1503|29040011007|02072007|2500|2500|6A-DC-53-05-14|4189179011|0.00|0.00|0.00|0.00",
-. LiteralBillAmount: {
-. . literal: "Dos mil quinientos  con 0/100 Bolivianos",
-. . split: {
-. . . integer: "Dos mil quinientos ",
-. . . cents: "",
-. . . centsHTML: "con <sup>0</sup>/<sub>100</sub>",
-. . . currency: "Boliviano",
-. . . format: "BOB2,500.00"
-. . }
-. }
+  ControlCode: "6A-DC-53-05-14",
+  QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP/// ...",
+  QRCodeText: "4189179011|1503|29040011007|02072007|2500|2500|6A-DC-53-05-14|4189179011|0.00|0.00|0.00|0.00",
+  LiteralBillAmount: {
+    literal: "Dos mil quinientos  con 0/100 Bolivianos",
+    split: {
+      integer: "Dos mil quinientos ",
+      cents: "",
+      centsHTML: "con <sup>0</sup>/<sub>100</sub>",
+      currency: "Boliviano",
+      format: "BOB2,500.00"
+    }
+  }
 }
 
 Test 1:
 {
-. ControlCode: "FB-A6-E4-78",
-. QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/ ...",
-. QRCodeText: "1026469026|152|79040011859|28072007|135|135|FB-A6-E4-78|1026469026|0.00|0.00|0.00|0.00",
-. LiteralBillAmount: {
-. . literal: "Ciento treinta y cinco con 0/100 Bolivianos",
-. . split: {
-. . . integer: "Ciento treinta y cinco",
-. . . cents: "",
-. . . centsHTML: "con <sup>0</sup>/<sub>100</sub>",
-. . . currency: "Boliviano",
-. . . format: "BOB135.00"
-. . }
-. }
+  ControlCode: "FB-A6-E4-78",
+  QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP/// ...",
+  QRCodeText: "1026469026|152|79040011859|28072007|135|135|FB-A6-E4-78|1026469026|0.00|0.00|0.00|0.00",
+  LiteralBillAmount: {
+    literal: "Ciento treinta y cinco con 0/100 Bolivianos",
+    split: {
+      integer: "Ciento treinta y cinco",
+      cents: "",
+      centsHTML: "con <sup>0</sup>/<sub>100</sub>",
+      currency: "Boliviano",
+      format: "BOB135.00"
+    }
+  }
 }
 
 Test 2:
 {
-. ControlCode: "71-D5-61-C8",
-. QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/ ...",
-. QRCodeText: "1004141023|665|20040010113|08012007|905,23|905,23|71-D5-61-C8|1004141023|0.00|0.00|0.00|0.00",
-. LiteralBillAmount: {
-. . literal: "Novecientos cinco con 23/100 Bolivianos",
-. . split: {
-. . . integer: "Novecientos cinco",
-. . . cents: "veintitres",
-. . . centsHTML: "con <sup>23</sup>/<sub>100</sub>",
-. . . currency: "Boliviano",
-. . . format: "BOB905.23"
-. . }
-. }
+  ControlCode: "71-D5-61-C8",
+  QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP/// ...",
+  QRCodeText: "1004141023|665|20040010113|08012007|905,23|905,23|71-D5-61-C8|1004141023|0.00|0.00|0.00|0.00",
+  LiteralBillAmount: {
+    literal: "Novecientos cinco con 23/100 Bolivianos",
+    split: {
+      integer: "Novecientos cinco",
+      cents: "veintitres",
+      centsHTML: "con <sup>23</sup>/<sub>100</sub>",
+      currency: "Boliviano",
+      format: "BOB905.23"
+    }
+  }
 }
 
 Test 3:
 {
-. ControlCode: "62-12-AF-1B",
-. QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/ ...",
-. QRCodeText: "0|978256|1904008691195|01022008|26006|26006|62-12-AF-1B|0|0.00|0.00|0.00|0.00",
-. LiteralBillAmount: {
-. . literal: "Veintiseis mil seis con 0/100 Bolivianos",
-. . split: {
-. . . integer: "Veintiseis mil seis",
-. . . cents: "",
-. . . centsHTML: "con <sup>0</sup>/<sub>100</sub>",
-. . . currency: "Boliviano",
-. . . format: "BOB26,006.00"
-. . }
-. }
+  ControlCode: "62-12-AF-1B",
+  QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP/// ...",
+  QRCodeText: "0|978256|1904008691195|01022008|26006|26006|62-12-AF-1B|0|0.00|0.00|0.00|0.00",
+  LiteralBillAmount: {
+    literal: "Veintiseis mil seis con 0/100 Bolivianos",
+    split: {
+      integer: "Veintiseis mil seis",
+      cents: "",
+      centsHTML: "con <sup>0</sup>/<sub>100</sub>",
+      currency: "Boliviano",
+      format: "BOB26,006.00"
+    }
+  }
 }
 
 Test 4:
 {
-. ControlCode: "6A-50-31-01-32",
-. QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/ ...",
-. QRCodeText: "1035012010|9901|10040010640|13082007|451,49|451,49|6A-50-31-01-32|1035012010|0.00|0.00|0.00|0.00",
-. LiteralBillAmount: {
-. . literal: "Cuatrocientos cincuenta y uno con 49/100 Bolivianos",
-. . split: {
-. . . integer: "Cuatrocientos cincuenta y uno",
-. . . cents: "cuarenta y nueve",
-. . . centsHTML: "con <sup>49</sup>/<sub>100</sub>",
-. . . currency: "Boliviano",
-. . . format: "BOB451.49"
-. . }
-. }
+  ControlCode: "6A-50-31-01-32",
+  QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP/// ...",
+  QRCodeText: "1035012010|9901|10040010640|13082007|451,49|451,49|6A-50-31-01-32|1035012010|0.00|0.00|0.00|0.00",
+  LiteralBillAmount: {
+    literal: "Cuatrocientos cincuenta y uno con 49/100 Bolivianos",
+    split: {
+      integer: "Cuatrocientos cincuenta y uno",
+      cents: "cuarenta y nueve",
+      centsHTML: "con <sup>49</sup>/<sub>100</sub>",
+      currency: "Boliviano",
+      format: "BOB451.49"
+    }
+  }
 }
 
 Test 5:
 {
-. ControlCode: "A8-6B-FD-82-16",
-. QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP///ywAAAAAlgCWAAAC/ ...",
-. QRCodeText: "953387014|10015|30040010595|25082007|5725,90|5725,90|A8-6B-FD-82-16|953387014|0.00|0.00|0.00|0.00",
-. LiteralBillAmount: {
-. . literal: "Cinco mil setecientos veinticinco con 90/100 Bolivianos",
-. . split: {
-. . . integer: "Cinco mil setecientos veinticinco",
-. . . cents: "noventa",
-. . . centsHTML: "con <sup>90</sup>/<sub>100</sub>",
-. . . currency: "Boliviano",
-. . . format: "BOB5,725.90"
-. . }
-. }
+  ControlCode: "A8-6B-FD-82-16",
+  QRCodeBase64: "data:image/gif;base64,R0lGODdhlgCWAIAAAAAAAP/// ...",
+  QRCodeText: "953387014|10015|30040010595|25082007|5725,90|5725,90|A8-6B-FD-82-16|953387014|0.00|0.00|0.00|0.00",
+  LiteralBillAmount: {
+    literal: "Cinco mil setecientos veinticinco con 90/100 Bolivianos",
+    split: {
+      integer: "Cinco mil setecientos veinticinco",
+      cents: "noventa",
+      centsHTML: "con <sup>90</sup>/<sub>100</sub>",
+      currency: "Boliviano",
+      format: "BOB5,725.90"
+    }
+  }
 }
-
 ```
 ![TBO](https://raw.githubusercontent.com/aleftos/billbo/master/TBO-icon-logo-128.png)
 <ul>
