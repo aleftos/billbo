@@ -19,6 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.2",
-    "jsome": "^2.5.0"
+    "jsome": "^2.5.0",
+    "yargs-parser": ">=13.1.2"
   }
 }
